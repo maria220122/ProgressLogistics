@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 160px;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.90);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+
+    & > a > img {
+      width: 100px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      padding-bottom: 10px;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    & > a {
+      width: 216px;
+    }
+  }
+}

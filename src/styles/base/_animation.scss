@@ -1,0 +1,25 @@
+._anim_show {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim_show_left {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim_show_up {
+  transform: translate(0px, -120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim_show._active,._active ._anim_show,
+._anim_show_left._active,._active ._anim_show_left,
+._anim_show_up._active,._active ._anim_show_up {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+

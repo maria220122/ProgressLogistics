@@ -1,0 +1,79 @@
+.about_us {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  &__img {
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__text {
+    max-width: 452px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 40px;
+  }
+
+  &__circles-container {
+    display: flex;
+    align-items: center;
+
+    & > div:not(:first-child) {
+      margin-left: -12px;
+    }
+  }
+
+  &__circle {
+    position: relative;
+    width: 236px;
+    height: 236px;
+    text-align: center;
+    padding: 72px;
+    border: 1px rgba(0, 0, 0, 0.40) solid;
+    border-radius: 100%;
+
+    &_left {
+      //position: relative;
+      //width: 236px;
+      //height: 236px;
+      //text-align: center;
+      //padding: 72px;
+      //border: 1px rgba(0, 0, 0, 0.40) solid;
+      //border-radius: 100%;
+      padding-left: 40px;
+    }
+
+    &-number {
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -3.5px;
+
+      & > span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.8px;
+      }
+    }
+
+    &-descr {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

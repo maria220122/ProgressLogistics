@@ -1,0 +1,515 @@
+@media (max-width: 1200px) {
+  .greeting {
+    &__text-block {
+      max-width: 459px;
+
+      & > h1 {
+        font-size: 80px;
+      }
+
+      & > h2 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .about_us {
+    &__circle {
+      width: 156px;
+      height: 156px;
+      padding: 40px 50px 50px;
+
+      &_left {
+        padding-left: 35px;
+      }
+
+      &-number {
+        font-size: 48px;
+        letter-spacing: -2.4px;
+      }
+
+      &-descr {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .advantages {
+    &__title {
+      padding-right: 150px;
+    }
+  }
+
+  .geography {
+    &__container {
+      & > img {
+        width: 280px;
+      }
+    }
+
+    &__information-block {
+      display: flex;
+      flex-direction: column;
+
+      & > img {
+        width: 530px;
+      }
+    }
+  }
+
+  .footer {
+    &__links {
+      flex-direction: column;
+      align-items: start;
+
+      & > a {
+        margin-top: 20px
+      }
+    }
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .container {
+    padding: 140px 20px 0;
+  }
+
+  .toc {
+    top: 140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 15px;
+
+    &__logo {
+      height: 120px;
+    }
+
+    &__links {
+      font-size: 14px;
+    }
+  }
+
+  .greeting {
+    &__text-block {
+      max-width: 369px;
+      & > h1 {
+        font-size: 62px;
+      }
+
+      & > h2 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .management-team {
+    img {
+      width: 350px;
+      height: 450px;
+    }
+  }
+
+  .advantages {
+    &__card {
+      &-name {
+        font-size: 26px;
+      }
+
+      &-img {
+        &_second {
+          margin: -30px -36px -50px
+        }
+      }
+    }
+  }
+
+  .geography {
+    &__container {
+      & > img {
+        width: 180px;
+      }
+    }
+
+    &__information-block {
+      display: flex;
+      flex-direction: column;
+
+      & > img {
+        width: 390px;
+      }
+    }
+  }
+
+  .arrow {
+    bottom: -50px;
+  }
+  .container {
+    padding: 120px 20px 0;
+  }
+
+  .toc {
+    top: 120px;
+  }
+
+  .footer {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 13px;
+
+    &__links {
+      font-size: 12px;
+      & > li:not(:last-child) {
+        padding-right: 14px;
+      }
+    }
+  }
+
+  .about_us {
+    &__container {
+      flex-direction: column-reverse;
+      justify-content: unset;
+      align-items: unset;
+    }
+
+    &__img {
+      display: none;
+      &_mobile {
+        display: block;
+        width: 164px;
+        height: 164px;
+      }
+    }
+
+    &__circles-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      row-gap: 10px;
+
+      & > div:not(:first-child) {
+        margin-left: 0;
+      }
+
+      & > div:nth-child(2) {
+        padding-left: 40px;
+      }
+    }
+  }
+
+  .management-team {
+    &__container {
+      flex-direction: column-reverse;
+      justify-content: unset;
+      align-items: center;
+    }
+
+    &__card {
+      width: 100%;
+      &-role {
+        margin-bottom: 20px;
+      }
+
+      &-container {
+        width: 100%;
+      }
+    }
+  }
+
+  .partners{
+    padding: 80px 10px 0;
+
+    &__container {
+      flex-direction: column-reverse;
+      justify-content: unset;
+      align-items: unset;
+
+      & > div:first-child {
+        display: none;
+      }
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      padding-right: 0;
+      text-align: left;
+      margin-top: 15px;
+      font-size: 32px;
+    }
+
+    &__cards-container {
+      & > div:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &__cards {
+      &-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+    }
+
+    &__card {
+      &_mobile {
+        display: block;
+      }
+    }
+  }
+
+  .advantages {
+    &__container {
+      display: unset;
+
+      &_second {
+        display: unset;
+      }
+
+      &-subwrapper {
+        margin-right: 0;
+        gap: 0;
+
+        & > div {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &__title {
+      padding-right: 0;
+      text-align: left;
+    }
+
+    &__card {
+      height: unset;
+      max-width: 100%;
+      margin-bottom: 10px;
+
+      &-descr {
+        letter-spacing: -0.8px;
+        line-height: 130%;
+      }
+
+      &-container {
+        & > div:first-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-img {
+        &_first {
+          margin-top: 60px;
+          margin-left: 10px;
+        }
+
+        &_second {
+          margin-top: 0;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .geography {
+    &__container {
+      flex-direction: column-reverse;
+      justify-content: unset;
+      align-items: center;
+
+      & > img {
+        margin: 0 auto;
+        width: 282px;
+      }
+    }
+  }
+
+  .container {
+    padding: 100px 20px 0;
+  }
+
+  .title {
+    text-align: right;
+  }
+
+  .toc {
+    top: 100px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 20px 10px;
+
+    &__logo {
+      height: 105px;
+    }
+
+    &__links {
+      display: none;
+    }
+  }
+
+  .greeting {
+    &__text-block {
+      top: 27%;
+      right: 50%;
+      transform: translateX(50%);
+
+      & > h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 0;
+      }
+
+      & > h2 {
+        position: absolute;
+        bottom: -280px;
+        left: 50%;
+        transform: translate(-50%, 120%);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: -0.72px;
+        white-space: nowrap;
+      }
+
+      & > h2._active {
+        transform: translate(-50%, 0px);
+      }
+    }
+  }
+
+  .wrap {
+    margin-top: 60px;
+  }
+
+  .advantages {
+    &__container {
+      display: unset;
+
+      &_second {
+        display: unset;
+      }
+
+      &-subwrapper {
+        margin-right: 0;
+        gap: 0;
+      }
+    }
+
+    &__card {
+      margin-bottom: 10px;
+
+      &-descr {
+        letter-spacing: -0.8px;
+        line-height: 130%;
+      }
+
+      &-container {
+        & > div:first-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-img {
+        &_first {
+          margin-top: 80px;
+          margin-left: 10px;
+        }
+
+        &_second {
+          margin-top: 0;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .geography {
+    &__container {
+      flex-direction: column-reverse;
+      justify-content: unset;
+      align-items: center;
+
+      & > img {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+
+    &__information-block {
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+
+  .management-team {
+    &__card {
+      text-align: center;
+
+      &-container {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .menu{
+    &__block{
+      width: 100%;
+    }
+    &__list{
+      padding-left: 10px;
+    }
+  }
+  .hamburger{
+    display: flex;
+  }
+
+  .footer {
+    margin-top: 80px;
+
+    &__links {
+      & > a {
+        width: 100%;
+      }
+    }
+  }
+
+  .divider {
+    width: 80%;
+    height: 2px;
+    margin: 15px auto;
+  }
+
+  .title {
+    margin-top: 15px;
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .container {
+    padding: 100px 10px 0;
+  }
+
+  .toc {
+    top: 80px;
+    left: 10px;
+  }
+}

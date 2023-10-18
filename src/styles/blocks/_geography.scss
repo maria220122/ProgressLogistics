@@ -1,0 +1,25 @@
+.geography {
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > img {
+      margin-left: 54px;
+    }
+  }
+
+  &__information-block {
+    display: flex;
+    flex-direction: column;
+
+    & > span {
+      font-size: 14px;
+      padding-left: 53px;
+    }
+  }
+
+  &__title {
+    padding-left: 45px;
+  }
+}

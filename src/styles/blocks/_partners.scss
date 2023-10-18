@@ -1,0 +1,46 @@
+.partners {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  &__text {
+    max-width: 452px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    position: relative;
+    width: 100%;
+    max-width: 216px;
+    min-width: 165px;
+    height: 136px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+
+    & > img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    align-items: center;
+
+    & > div:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
